@@ -1,0 +1,224 @@
+/* MAIN GERAL */
+
+.main{
+    background-color: var(--main-background);
+}
+
+/* FEATURES */
+section#features img{
+    width: auto;
+}
+
+.main__sectionfeatures{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8.4rem;
+
+    width: min(50rem, 100%);
+    margin-inline: auto;
+}
+
+.main__featurestitles{
+    margin-top: 2.6rem;
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    section#features.section-standard{
+        padding-top: 0;
+    }
+
+    .main__sectionfeatures{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9rem;
+        align-items: center;
+
+        width: min(103.0rem, 100%);
+    }
+
+    section#features p{
+        width: min(105.0rem, 85%);
+        margin-inline: auto;
+    }
+}
+
+/* STAY PRODUCTIVE */
+section.main__productive{
+    width: min(50rem, 100%);
+    margin-inline: auto;
+
+    text-align: left;
+}
+
+.main__productivetitle{
+    margin-top: 4rem;
+}
+
+.main__productiveparagraph{
+    margin-block: 2rem;
+}
+
+.main__productivelinkdiv{
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+
+    border-bottom: 2px solid var(--text-color-special);
+    width: fit-content;
+}
+
+.main__productivelink{
+    color: var(--text-color-special);
+    text-decoration: none;
+
+    margin-bottom: .70rem;
+}
+
+.main__productivelinkimg{
+    margin-bottom: .70rem;
+}
+
+@media screen and (min-width: 1024px) {
+    section.main__productive{
+        width: min(103.0rem, 100%);   
+
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+
+        gap: 4rem;
+    }
+
+    main .col-b{
+        align-self: center;
+    }
+
+    main .main__productivetitle{
+        font-size: 3rem;
+        width: 60%;
+        line-height: 1.5;
+
+        margin-top: 0;
+    }
+}
+
+/* TEAM */
+section.main__team{ 
+    background-image: url('../img/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position-x: 6rem;
+    background-position-y: 10.4rem;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    font-size: 1.2rem;
+    text-align: left;
+
+    padding-top: 14rem;
+    padding-inline: 4.8rem;
+}
+
+.main__teamdepoiments{
+    background-color: var(--testimonials-background);
+    box-shadow: 0 0 1rem var(--testimonials-background);
+
+    width: 100%;
+
+    padding: 3rem 2rem 2rem 2rem;
+    border-radius: .5rem;
+}
+
+section p.main__teamparagraph{
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.main__teamprofile{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    column-gap: .2rem;
+}
+
+.main__teamimg{
+    border-radius: 100%;
+    width: 80%;
+
+    grid-row: span 2;
+}
+
+.main__teamname{
+    font-weight: 700;
+    font-family: var(--secondary-font);
+}
+
+.main__teamdesc{
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    section.main__team{ 
+        background-position-x: 17rem;
+
+        padding-inline: 16rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.main__team{ 
+        background-position-x: 5rem;
+
+        width: min(130.0rem, 100%); 
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3.8rem;
+    
+        font-size: 1.2rem;
+    
+        padding-inline: 6rem;
+        margin-inline: auto;
+    }
+}
+
+/* SIGN IN */
+section.main__sign{
+    padding-inline: 2.4rem;
+}
+
+.main__signcontent{
+    background-color: var(--intro-email-background);
+
+    width: min(70rem, 100%);
+
+    margin-inline: auto;
+
+    padding: 4rem 3rem 3rem 3rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+
+
+.main__signtitle{
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .main__signcontent{
+        width: 70%;
+        margin-inline: auto;
+
+        padding-inline: 6rem;
+    }
+
+    main .main__signtitle{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .main__signcontent{
+        width: 60%;
+    }
+}
+

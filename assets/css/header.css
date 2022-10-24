@@ -1,0 +1,120 @@
+/* HEADER NAVIGATION */
+.header{
+    background: var(--intro-main);
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.header__navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8rem;
+
+    padding-block: 2.8rem;
+    padding-inline: 2rem;
+}
+
+.header__logo{
+    width: 14rem;
+}
+
+.header__link:hover{
+    font-weight: 700;
+    text-decoration: underline;
+
+    transition: all 200ms;
+}
+
+.header__lista{
+    display: flex;
+    gap: 3rem;
+}
+
+.header__content{
+    background: url('../img/bg-curvy-mobile.svg') no-repeat center / contain;
+
+    margin-inline: auto;
+
+    text-align: center;
+    
+    padding-inline: 3rem;
+}
+
+.header__img{
+    width: min(50rem, 100%);
+
+    padding-block: 2rem;
+}
+
+.header__maintitle{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.5;
+
+    width: min(50rem, 100%);
+
+    margin-inline: auto;
+}
+
+.header__paragraph{
+    width: min(50rem, 100%);
+    margin: 2rem auto;
+}
+
+
+.header__button{
+    width: min(40rem, 80%);
+
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+    .header__navigation{        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__logo{
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        background: var(--intro-email-background);
+    }
+
+    .header__navigation{
+        padding: 4.8rem 4.8rem 4rem 4.8rem;
+    }
+
+    .header__logo{
+        width: 16rem;
+    }
+
+    .header__content{
+        background: url('../img/bg-curvy-desktop.svg') no-repeat bottom / contain;
+        width: 100%;
+        
+        padding-bottom: 14rem;
+    }
+
+    .header__maintitle{
+        font-size: 3rem;
+
+        width: 60%;
+    }
+
+    .header__paragraph{
+        width: 45%;
+    }
+
+    .header__button{
+        width: 28%;
+    }
+}

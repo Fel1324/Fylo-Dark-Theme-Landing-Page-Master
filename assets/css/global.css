@@ -1,0 +1,93 @@
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --intro-main: linear-gradient(1800deg, hsl(217, 27%, 13%) 33%, hsl(217, 27%, 15%) 33%);
+    --intro-email-background: hsl(217, 28%, 15%);
+    --main-background: hsl(218, 28%, 13%);
+    --footer-background: hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+
+    --call-to-action-gradient: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+
+    --text-color-special: hsl(181, 45%, 59%);
+    --text-color: hsl(0, 0%, 100%);
+    
+    --vermelho-claro: hsl(0, 100%, 63%);
+
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    scroll-behavior: smooth;
+}
+
+header img, main img{
+    width: 100%;
+}
+
+
+
+.section-standard{
+    text-align: center;
+
+    padding-top: 14rem;
+    padding-inline: 3rem;
+}
+
+.titles{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+
+    font-size: 2rem;
+}
+
+.paragraph{
+    line-height: 1.5;
+}
+
+.link{
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    text-decoration: none;
+}
+
+.button{
+    display: inline-block;
+
+    background: var(--call-to-action-gradient);
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+
+    border-radius: 5rem;
+
+    padding: 2rem;
+}
+
+.button:hover{
+    filter: brightness(1.8);
+
+    transition: all 250ms;
+}
+
