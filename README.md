@@ -30,7 +30,7 @@
 
 <h2 id="acesso">⚓ Acesso ao projeto</h2>
 
-Acesse o projeto clicando [aqui](https://github.com/Fel1324/Fylo-Dark-Theme-Landing-Page-Master)
+Acesse o projeto clicando [aqui](https://fel1324.github.io/Fylo-Dark-Theme-Landing-Page-Master/)
 
 <br>
 
