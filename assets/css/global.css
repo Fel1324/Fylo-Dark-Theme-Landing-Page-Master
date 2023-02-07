@@ -46,10 +46,6 @@ header img, main img{
     width: 100%;
 }
 
-button{
-    cursor: pointer;
-}
-
 .section-standard{
     text-align: center;
 
@@ -84,6 +80,8 @@ button{
     border-radius: 5rem;
 
     padding: 2rem;
+
+    cursor: pointer;
 }
 
 .button:hover{
