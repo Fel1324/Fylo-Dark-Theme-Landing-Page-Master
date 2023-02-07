@@ -46,7 +46,9 @@ header img, main img{
     width: 100%;
 }
 
-
+button{
+    cursor: pointer;
+}
 
 .section-standard{
     text-align: center;
@@ -78,7 +80,6 @@ header img, main img{
     background: var(--call-to-action-gradient);
     color: var(--text-color);
     font-size: 1.6rem;
-
 
     border-radius: 5rem;
 
